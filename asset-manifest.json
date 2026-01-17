@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SaintKiri/SaintKiri.github.io/static/css/main.8c7891d0.css",
+    "main.js": "/SaintKiri/SaintKiri.github.io/static/js/main.e0f88ea6.js",
+    "static/js/453.065e09f6.chunk.js": "/SaintKiri/SaintKiri.github.io/static/js/453.065e09f6.chunk.js",
+    "index.html": "/SaintKiri/SaintKiri.github.io/index.html",
+    "main.8c7891d0.css.map": "/SaintKiri/SaintKiri.github.io/static/css/main.8c7891d0.css.map",
+    "main.e0f88ea6.js.map": "/SaintKiri/SaintKiri.github.io/static/js/main.e0f88ea6.js.map",
+    "453.065e09f6.chunk.js.map": "/SaintKiri/SaintKiri.github.io/static/js/453.065e09f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c7891d0.css",
+    "static/js/main.e0f88ea6.js"
+  ]
+}
