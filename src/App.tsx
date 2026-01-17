@@ -1,11 +1,10 @@
-import React, { Fragment } from 'react';
 import './App.css';
 
 import SiteNavigationBar from "./SiteNavigationBar";
 
 function App() {
   return (
-    <Fragment>
+    <>
       <SiteNavigationBar />
 
       <div className="App">
@@ -33,7 +32,7 @@ function App() {
       <footer>
         <p>Inspired from <a href="https://github.com/ClementTsang/clementtsang.github.io">Clement Tsang</a>. Designed and built by <a href="https://github.com/SaintKiri/SaintKiri.github.io">Jack Song</a></p>
       </footer>
-    </Fragment>
+    </>
   );
 }
 
