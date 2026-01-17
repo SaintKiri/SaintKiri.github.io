@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SaintKiri/SaintKiri.github.io/static/css/main.e1f1b8a4.css",
-    "main.js": "/SaintKiri/SaintKiri.github.io/static/js/main.91f40d5a.js",
-    "static/js/453.065e09f6.chunk.js": "/SaintKiri/SaintKiri.github.io/static/js/453.065e09f6.chunk.js",
-    "index.html": "/SaintKiri/SaintKiri.github.io/index.html",
-    "main.e1f1b8a4.css.map": "/SaintKiri/SaintKiri.github.io/static/css/main.e1f1b8a4.css.map",
-    "main.91f40d5a.js.map": "/SaintKiri/SaintKiri.github.io/static/js/main.91f40d5a.js.map",
-    "453.065e09f6.chunk.js.map": "/SaintKiri/SaintKiri.github.io/static/js/453.065e09f6.chunk.js.map"
+    "main.css": "/static/css/main.e1f1b8a4.css",
+    "main.js": "/static/js/main.bc3be324.js",
+    "static/js/453.065e09f6.chunk.js": "/static/js/453.065e09f6.chunk.js",
+    "index.html": "/index.html",
+    "main.e1f1b8a4.css.map": "/static/css/main.e1f1b8a4.css.map",
+    "main.bc3be324.js.map": "/static/js/main.bc3be324.js.map",
+    "453.065e09f6.chunk.js.map": "/static/js/453.065e09f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1f1b8a4.css",
-    "static/js/main.91f40d5a.js"
+    "static/js/main.bc3be324.js"
   ]
 }
