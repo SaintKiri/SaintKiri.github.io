@@ -1,7 +1,7 @@
 {
   "name": "gh-page",
   "version": "0.1.0",
-  "homepage": "https://github.com/SaintKiri/SaintKiri.github.io",
+  "homepage": "https://SaintKiri.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -13,6 +13,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "react": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

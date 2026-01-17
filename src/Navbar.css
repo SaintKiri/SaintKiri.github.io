@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+
+.me-auto {
+  font-size: 1.5em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
