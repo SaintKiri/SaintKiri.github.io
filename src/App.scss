@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap);
+$font-family-base: 'Quicksand', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+$headings-font-weight: bold;
+h1, h2 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+footer {
+  padding-top: 3em;
+  text-align: center;
+}
+
+@import '~bootstrap/scss/bootstrap';
+@import 'Navbar.scss';
