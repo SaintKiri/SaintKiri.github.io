@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9f167ff.css",
-    "main.js": "/static/js/main.cd938cb5.js",
-    "static/js/453.065e09f6.chunk.js": "/static/js/453.065e09f6.chunk.js",
+    "main.css": "/static/css/main.e61ef8d9.css",
+    "main.js": "/static/js/main.c93699e2.js",
+    "static/js/453.4e1c4a8d.chunk.js": "/static/js/453.4e1c4a8d.chunk.js",
     "static/media/resume_output.pdf": "/static/media/resume_output.fa34714405404410397f.pdf",
     "static/media/quicksand-latin-ext-400-normal.woff": "/static/media/quicksand-latin-ext-400-normal.72e60d1c7f7c603f31d6.woff",
     "static/media/quicksand-latin-400-normal.woff": "/static/media/quicksand-latin-400-normal.1ea77c9e193d437b9bfa.woff",
@@ -11,12 +11,12 @@
     "static/media/quicksand-vietnamese-400-normal.woff": "/static/media/quicksand-vietnamese-400-normal.b81893c113e684d9eec4.woff",
     "static/media/quicksand-vietnamese-400-normal.woff2": "/static/media/quicksand-vietnamese-400-normal.5062c95fb3c68af2ee2e.woff2",
     "index.html": "/index.html",
-    "main.e9f167ff.css.map": "/static/css/main.e9f167ff.css.map",
-    "main.cd938cb5.js.map": "/static/js/main.cd938cb5.js.map",
-    "453.065e09f6.chunk.js.map": "/static/js/453.065e09f6.chunk.js.map"
+    "main.e61ef8d9.css.map": "/static/css/main.e61ef8d9.css.map",
+    "main.c93699e2.js.map": "/static/js/main.c93699e2.js.map",
+    "453.4e1c4a8d.chunk.js.map": "/static/js/453.4e1c4a8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9f167ff.css",
-    "static/js/main.cd938cb5.js"
+    "static/css/main.e61ef8d9.css",
+    "static/js/main.c93699e2.js"
   ]
 }
