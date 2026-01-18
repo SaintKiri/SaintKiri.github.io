@@ -2,6 +2,11 @@ import "@fontsource/quicksand"
 import './App.scss';
 
 import Divider from '@mui/material/Divider';
+import IconButton from "@mui/material/IconButton";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import DescriptionIcon from '@mui/icons-material/Description';
+import Resume from './assets/resume_output.pdf';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import SiteNavigationBar from "./SiteNavigationBar";
 
@@ -14,7 +19,6 @@ function App() {
         {/* TODO: 
         - https://noaheakin.medium.com/changing-the-default-react-browser-tab-title-and-icon-1240239d92d3
         - Decide on a color theme, don't go monochrome
-        - Add a colored divider to each section. between heading and its other elements
         - Think about what to add in the `Experience` section
         - MAKE PROGRESS ON PRESENTABLE PROJECTS
          */}
@@ -22,6 +26,17 @@ function App() {
         <section id='summary'>
           <h1>Jack Song</h1>
           <Divider className="heading-divider" aria-hidden="true" />
+          <p>I know a little about everything</p>
+
+          <IconButton href={Resume}>
+            <DescriptionIcon />
+          </IconButton>
+          <IconButton href="https://github.com/SaintKiri">
+            <GitHubIcon />
+          </IconButton>
+          <IconButton href="https://www.linkedin.com/in/jj-jack-song/">
+            <LinkedInIcon />
+          </IconButton>
         </section>
 
         <section id='experience'>
