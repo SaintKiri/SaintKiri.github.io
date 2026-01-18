@@ -1,4 +1,7 @@
+import "@fontsource/quicksand"
 import './App.scss';
+
+import Divider from '@mui/material/Divider';
 
 import SiteNavigationBar from "./SiteNavigationBar";
 
@@ -18,22 +21,27 @@ function App() {
 
         <section id='summary'>
           <h1>Jack Song</h1>
+          <Divider className="heading-divider" aria-hidden="true" />
         </section>
 
         <section id='experience'>
           <h2>Experience</h2>
+          <Divider className="heading-divider" aria-hidden="true" />
         </section>
 
         <section id='projects'>
           <h2>Projects</h2>
+          <Divider className="heading-divider" aria-hidden="true" />
         </section>
 
         <section id='education'>
           <h2>Education</h2>
+          <Divider className="heading-divider" aria-hidden="true" />
         </section>
 
         <section id='contact'>
           <h2 >Contact</h2>
+          <Divider className="heading-divider" aria-hidden="true" />
           <p>Send me an email at <a href="mailto:jis110@pitt.edu">jis110@pitt.edu</a> and I will get back to you ASAP!</p>
         </section>
       </div>
