@@ -1,23 +1,48 @@
 // Global attributes
 $font-family-base: 'Quicksand', sans-serif;
+
 html {
   scroll-behavior: smooth;
 }
+
 .App {
   text-align: center;
 }
 
 // Heading stuff
 $headings-font-weight: bold;
-h1, h2 {
+
+h1,
+h2 {
   padding-top: 2em;
 }
+
 hr.heading-divider {
   margin: 2em auto;
   width: 10%;
   border-bottom-width: 3px;
   border-color: black;
   opacity: 100%;
+}
+
+// Picture stuff in the `Education` section
+.instagram-crop-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.instagram-mask {
+  width: 328px; // Standard Instagram embed width
+  height: var(--mask-height, 328px);
+  overflow: hidden; // Hides the profile header and footer
+  border: 1px solid black;
+  position: relative;
+  margin: 1px;
+
+  iframe {
+    margin-top: -54px !important; // Pulls the image up to hide the header
+  }
 }
 
 footer {

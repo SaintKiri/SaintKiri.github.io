@@ -8,6 +8,7 @@ function SiteNavigationBar() {
       <Container>
         <Navbar.Brand href='#home'>Jack S</Navbar.Brand>
 
+        {/* TODO: Underline current section as user scrolls */}
         <Nav className="ms-auto">
           <Nav.Link href='#experience'>Experience</Nav.Link>
           <Nav.Link href='#education'>Education</Nav.Link>

@@ -8,6 +8,8 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import Resume from './assets/resume_output.pdf';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import { InstagramEmbed } from 'react-social-media-embed';
+
 import SiteNavigationBar from "./SiteNavigationBar";
 
 function App() {
@@ -17,7 +19,6 @@ function App() {
 
       <div className="App">
         {/* TODO: 
-        - https://noaheakin.medium.com/changing-the-default-react-browser-tab-title-and-icon-1240239d92d3
         - Decide on a color theme, don't go monochrome
         - Think about what to add in the `Experience` section
         - MAKE PROGRESS ON PRESENTABLE PROJECTS
@@ -52,6 +53,20 @@ function App() {
         <section id='education'>
           <h2>Education</h2>
           <Divider className="heading-divider" aria-hidden="true" />
+          <p>University of Pittsburgh | 2019 - 2023</p>
+          <p>Pennsylvania, US</p>
+          <a href="https://www.pitt.edu/">pitt.edu</a>
+
+          <p>Bachelor of Computer Science</p>
+          <p>Badminton Club: Vice President: 2020 - 2021 | President: 2021 - 2023</p>
+          <div className="instagram-crop-wrapper">
+            <div className="instagram-mask" style={{ '--mask-height': '270px' } as React.CSSProperties}>
+              <InstagramEmbed url="https://www.instagram.com/p/C05VUrEOGfO/" width="100%" captioned={false} />
+            </div>
+            <div className="instagram-mask">
+              <InstagramEmbed url="https://www.instagram.com/p/CnnukbWOwip/" width="100%" captioned={false} />
+            </div>
+          </div>
         </section>
 
         <section id='contact'>
