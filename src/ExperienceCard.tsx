@@ -3,8 +3,6 @@ import CardContent from '@mui/material/CardContent';
 
 import type { SimpleCard } from './types/SimpleCard';
 
-import './ExperienceCard.scss';
-
 function ExperienceCard({ exp }: { exp: SimpleCard }) {
   return (
     <Card variant="outlined">

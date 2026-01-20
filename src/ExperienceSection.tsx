@@ -14,7 +14,7 @@ const REVATURE: SimpleCard = {
   date: 'Jun 2024 - Dec 2024',
   companyURL: ['Revature', 'https://www.revature.com/'],
   descriptionTitle: 'Associate',
-  description: 'Trained in React, Java, Spring Boot, and PostgreSQL. Combined with Agile/scrum methology in a small team of 6 as the final project. '
+  description: 'Trained in React, Java, Spring Boot, and PostgreSQL. Combined learned tools with Agile/scrum in a small team of 6 as the final project. '
 }
 const WORK_EXPERIENCES: SimpleCard[] = [INFOSYS, REVATURE];
 

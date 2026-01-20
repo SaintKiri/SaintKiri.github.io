@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 function SiteNavigationBar() {
   return (
-    <Navbar expand="lg" sticky='top'>
+    <Navbar expand="lg" fixed='top'>
       <Container>
         <Navbar.Brand href='#home'>Jack S</Navbar.Brand>
 

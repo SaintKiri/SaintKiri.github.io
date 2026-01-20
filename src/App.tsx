@@ -25,7 +25,7 @@ function App() {
         - MAKE PROGRESS ON PRESENTABLE PROJECTS
          */}
 
-        <section id='summary'>
+        <section id='home'>
           <h1>Jack Song</h1>
           <Divider className="heading-divider" aria-hidden="true" />
           <p>I know a little about everything</p>
