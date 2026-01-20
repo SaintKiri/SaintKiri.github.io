@@ -1,0 +1,13 @@
+.MuiCard-root {
+  border-radius: 12px;
+  border-color: black;
+  margin: 1em;
+
+  p {
+    margin: 0;
+
+    &:empty {
+      margin: 0;
+    }
+  }
+}

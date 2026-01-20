@@ -1,5 +1,5 @@
 import "@fontsource/quicksand"
-import './App.scss';
+import './App.scss'; // TODO: (Not priority) Refactor scss structure properly
 
 import Divider from '@mui/material/Divider';
 import IconButton from "@mui/material/IconButton";
@@ -11,6 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { InstagramEmbed } from 'react-social-media-embed';
 
 import SiteNavigationBar from "./SiteNavigationBar";
+import ExperienceSection from "./ExperienceSection";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <section id='experience'>
           <h2>Experience</h2>
           <Divider className="heading-divider" aria-hidden="true" />
+          <ExperienceSection />
         </section>
 
         <section id='projects'>
