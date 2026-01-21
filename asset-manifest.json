@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d1d9cd3.css",
-    "main.js": "/static/js/main.58ec85eb.js",
+    "main.css": "/static/css/main.b965ee6d.css",
+    "main.js": "/static/js/main.6b1d769e.js",
     "static/js/453.4e1c4a8d.chunk.js": "/static/js/453.4e1c4a8d.chunk.js",
     "static/media/resume_output.pdf": "/static/media/resume_output.fa34714405404410397f.pdf",
     "static/media/quicksand-latin-ext-400-normal.woff": "/static/media/quicksand-latin-ext-400-normal.72e60d1c7f7c603f31d6.woff",
@@ -11,12 +11,12 @@
     "static/media/quicksand-vietnamese-400-normal.woff": "/static/media/quicksand-vietnamese-400-normal.b81893c113e684d9eec4.woff",
     "static/media/quicksand-vietnamese-400-normal.woff2": "/static/media/quicksand-vietnamese-400-normal.5062c95fb3c68af2ee2e.woff2",
     "index.html": "/index.html",
-    "main.2d1d9cd3.css.map": "/static/css/main.2d1d9cd3.css.map",
-    "main.58ec85eb.js.map": "/static/js/main.58ec85eb.js.map",
+    "main.b965ee6d.css.map": "/static/css/main.b965ee6d.css.map",
+    "main.6b1d769e.js.map": "/static/js/main.6b1d769e.js.map",
     "453.4e1c4a8d.chunk.js.map": "/static/js/453.4e1c4a8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1d9cd3.css",
-    "static/js/main.58ec85eb.js"
+    "static/css/main.b965ee6d.css",
+    "static/js/main.6b1d769e.js"
   ]
 }
