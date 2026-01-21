@@ -20,7 +20,6 @@ const WORK_EXPERIENCES: SimpleCard[] = [INFOSYS, REVATURE];
 
 function ExperienceSection() {
   return (
-    /* TODO: (maybe) filter by relevant experience: swe, mechanic  */
     <>
       {WORK_EXPERIENCES.map((exp) => (
         <ExperienceCard key={exp.companyName} exp={exp}></ExperienceCard>

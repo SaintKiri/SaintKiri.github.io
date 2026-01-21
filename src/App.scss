@@ -13,6 +13,15 @@ html {
 $navbar-brand-font-size: 2.5rem;
 $nav-link-font-size: 1.25rem;
 
+// Home (summary)
+#home {
+  min-height: 100vh; // Takes up the entire screen vertically
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Heading stuff
 $headings-font-weight: bold;
 
@@ -28,6 +37,61 @@ hr.heading-divider {
   border-bottom-width: 3px;
   border-color: black;
   opacity: 100%;
+}
+
+// Card
+.experience-card {
+  margin: 3em;
+
+  &.row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 250px; // Optional: keeps the pane from getting too squished
+  margin-right: 10%;
+
+  .icon-stack {
+    gap: 2px;
+
+    .stack-item {
+      display: flex;
+      align-items: center; // Vertically centers icon with text
+      justify-content: flex-start;
+
+      svg {
+        width: 20px;
+        margin-right: 5px; // Space between icon and description
+        flex-shrink: 0; // Prevents icon from shrinking
+      }
+
+      span {
+        p {
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right-pane {
+  border-left: 1px solid #eee;
+  text-align: left;
+  padding-left: 5% !important;
 }
 
 // Picture stuff in the `Education` section
@@ -53,31 +117,6 @@ hr.heading-divider {
 footer {
   padding-top: 3em;
   text-align: center;
-}
-
-// Card
-.MuiCard-root.MuiPaper-outlined {
-  box-shadow: none !important;
-  border-width: 1px;
-  border-radius: 12px;
-  border-color: black;
-  margin: 1em;
-
-  p {
-    margin: 0;
-
-    &:empty {
-      display: none;
-    }
-  }
-}
-
-.MuiCardContent-root {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start; // Aligns flex children to the left
-  text-align: left; // Aligns inline text/inline-blocks to the left
-  // width: 100%;
 }
 
 @import '~bootstrap/scss/bootstrap';

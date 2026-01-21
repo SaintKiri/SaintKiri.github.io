@@ -26,25 +26,30 @@ function App() {
          */}
 
         <section id='home'>
-          <h1>Jack Song</h1>
-          <Divider className="heading-divider" aria-hidden="true" />
-          <p>I know a little about everything</p>
+          <div>
+            <h1>Jack Song</h1>
+            <Divider className="heading-divider" aria-hidden="true" />
+            <p>I know a little about everything</p>
 
-          <IconButton href={Resume}>
-            <DescriptionIcon />
-          </IconButton>
-          <IconButton href="https://github.com/SaintKiri">
-            <GitHubIcon />
-          </IconButton>
-          <IconButton href="https://www.linkedin.com/in/jj-jack-song/">
-            <LinkedInIcon />
-          </IconButton>
+            <IconButton href={Resume}>
+              <DescriptionIcon />
+            </IconButton>
+            <IconButton href="https://github.com/SaintKiri">
+              <GitHubIcon />
+            </IconButton>
+            <IconButton href="https://www.linkedin.com/in/jj-jack-song/">
+              <LinkedInIcon />
+            </IconButton>
+          </div>
+
         </section>
 
         <section id='experience'>
-          <h2>Experience</h2>
-          <Divider className="heading-divider" aria-hidden="true" />
-          <ExperienceSection />
+          <div>
+            <h2>Experience</h2>
+            <Divider className="heading-divider" aria-hidden="true" />
+            <ExperienceSection />
+          </div>
         </section>
 
         <section id='projects'>

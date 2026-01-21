@@ -1,7 +1,9 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Grid';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Stack from 'react-bootstrap/Stack';
 
+// Icons
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import LocationPinIcon from '@mui/icons-material/LocationPin';
 import LinkIcon from '@mui/icons-material/Link';
@@ -10,45 +12,36 @@ import type { SimpleCard } from './types/SimpleCard';
 
 function ExperienceCard({ exp }: { exp: SimpleCard }) {
   return (
-    <Card variant="outlined">
-      <Grid container spacing={2}>
-        <Grid size={5}>
-          <CardContent className='info'>
-            <h5>{exp.companyName}</h5>
+    <Container className='experience-card'>
+      <Row className='justify-content-md-center'>
+        <Col md='auto' className='left-pane'>
+          <h5>{exp.companyName}</h5>
+          <Stack className='icon-stack'>
+            <div className='stack-item'>
+              <CalendarMonthIcon />
+              <span><p>{exp.date}</p></span>
+            </div>
+            {exp.location &&
+              <div className='stack-item'>
+                <LocationPinIcon />
+                <span><p>{exp.location}</p></span>
+              </div>
+            }
+            <div className='stack-item'>
+              <LinkIcon />
+              <span><a href={exp.companyURL[1]}>{exp.companyURL[0]}</a></span>
+            </div>
+          </Stack>
+        </Col>
 
-            <Grid container>
-              <Grid size={1}>
-                <CalendarMonthIcon />
-              </Grid>
-              <Grid size={11}>
-                <p>{exp.date}</p>
-              </Grid>
-
-              {exp.location && <>
-                <Grid size={1}>
-                  <LocationPinIcon />
-                </Grid><Grid size={11}>
-                  <p>{exp.location}</p>
-                </Grid>
-              </>}
-
-              <Grid size={1}>
-                <LinkIcon />
-              </Grid>
-              <Grid size={11}>
-                <a href={exp.companyURL[1]}>{exp.companyURL[0]}</a>
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Grid>
-        <Grid size={7}>
-          <CardContent className='description'>
+        <Col md={6} className='right-pane'>
+          <Stack className='description align-items-start'>
             <h6>{exp.descriptionTitle}</h6>
             <p>{exp.description}</p>
-          </CardContent>
-        </Grid>
-      </Grid>
-    </Card>
+          </Stack>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
