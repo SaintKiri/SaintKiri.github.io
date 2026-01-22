@@ -1,4 +1,4 @@
-export type SimpleCard = {
+export type TextCard = {
   companyName: string;
   date: string;
   location?: string;

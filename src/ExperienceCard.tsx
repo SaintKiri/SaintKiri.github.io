@@ -8,9 +8,9 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import LocationPinIcon from '@mui/icons-material/LocationPin';
 import LinkIcon from '@mui/icons-material/Link';
 
-import type { SimpleCard } from './types/SimpleCard';
+import type { TextCard } from './types/TextCard';
 
-function ExperienceCard({ exp }: { exp: SimpleCard }) {
+function ExperienceCard({ exp }: { exp: TextCard }) {
   return (
     <Container className='experience-card'>
       <Row className='justify-content-md-center'>

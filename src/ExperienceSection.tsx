@@ -1,7 +1,7 @@
 import ExperienceCard from './ExperienceCard';
-import { SimpleCard } from './types/SimpleCard';
+import type { TextCard } from './types/TextCard';
 
-const INFOSYS: SimpleCard = {
+const INFOSYS: TextCard = {
   companyName: 'Infosys',
   date: 'Dec 2024 - Dec 2025',
   location: 'Indianapolis, IN',
@@ -9,14 +9,14 @@ const INFOSYS: SimpleCard = {
   descriptionTitle: 'Associate',
   description: 'Futher trained in software development in making enterprise level code. Contributed to open-source projects when not on project/training. '
 }
-const REVATURE: SimpleCard = {
+const REVATURE: TextCard = {
   companyName: 'Revature',
   date: 'Jun 2024 - Dec 2024',
   companyURL: ['Revature', 'https://www.revature.com/'],
   descriptionTitle: 'Associate',
   description: 'Trained in React, Java, Spring Boot, and PostgreSQL. Combined learned tools with Agile/scrum in a small team of 6 as the final project. '
 }
-const WORK_EXPERIENCES: SimpleCard[] = [INFOSYS, REVATURE];
+const WORK_EXPERIENCES: TextCard[] = [INFOSYS, REVATURE];
 
 function ExperienceSection() {
   return (

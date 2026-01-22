@@ -5,8 +5,9 @@ import Divider from '@mui/material/Divider';
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
-import Resume from './assets/resume_output.pdf';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+import Resume from './assets/resume_output.pdf';
 
 import { InstagramEmbed } from 'react-social-media-embed';
 

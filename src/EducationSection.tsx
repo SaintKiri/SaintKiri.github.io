@@ -1,7 +1,7 @@
 import ExperienceCard from "./ExperienceCard";
-import { SimpleCard } from "./types/SimpleCard";
+import type { TextCard } from "./types/TextCard";
 
-const EDUCATION: SimpleCard = {
+const EDUCATION: TextCard = {
   companyName: "University of Pittsburgh",
   date: "2019 - 2023",
   location: "Pittsburgh, PA",
