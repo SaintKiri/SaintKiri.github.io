@@ -1,11 +1,8 @@
 import "@fontsource/quicksand"
 import './App.scss'; // TODO: (Not priority) Refactor scss structure properly
 
-import Divider from '@mui/material/Divider';
-import IconButton from "@mui/material/IconButton";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import DescriptionIcon from '@mui/icons-material/Description';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Divider, IconButton } from '@mui/material';
+import { GitHub, Description, LinkedIn } from '@mui/icons-material';
 
 import Resume from './assets/resume_output.pdf';
 
@@ -35,13 +32,13 @@ function App() {
             <p>I know a little about everything</p>
 
             <IconButton href={Resume}>
-              <DescriptionIcon />
+              <Description />
             </IconButton>
             <IconButton href="https://github.com/SaintKiri">
-              <GitHubIcon />
+              <GitHub />
             </IconButton>
             <IconButton href="https://www.linkedin.com/in/jj-jack-song/">
-              <LinkedInIcon />
+              <LinkedIn />
             </IconButton>
           </div>
 

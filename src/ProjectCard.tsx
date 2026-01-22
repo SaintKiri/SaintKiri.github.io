@@ -1,7 +1,4 @@
-import Card from '@mui/material/Card';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
+import { Card, CardActionArea, CardMedia, Box } from '@mui/material';
 
 // Icons
 import 'devicon/devicon.min.css'
