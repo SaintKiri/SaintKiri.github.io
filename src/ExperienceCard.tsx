@@ -37,7 +37,7 @@ function ExperienceCard({ exp }: { exp: SimpleCard }) {
         <Col md={6} className='right-pane'>
           <Stack className='description align-items-start'>
             <h6>{exp.descriptionTitle}</h6>
-            <p>{exp.description}</p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>{exp.description}</p>
           </Stack>
         </Col>
       </Row>

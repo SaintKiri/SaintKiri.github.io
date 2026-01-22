@@ -12,6 +12,8 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 import SiteNavigationBar from "./SiteNavigationBar";
 import ExperienceSection from "./ExperienceSection";
+import EducationSection from "./EducationSection";
+import ProjectsSection from "./ProjectsSection";
 
 function App() {
   return (
@@ -55,17 +57,13 @@ function App() {
         <section id='projects'>
           <h2>Projects</h2>
           <Divider className="heading-divider" aria-hidden="true" />
+          <ProjectsSection />
         </section>
 
         <section id='education'>
           <h2>Education</h2>
           <Divider className="heading-divider" aria-hidden="true" />
-          <p>University of Pittsburgh | 2019 - 2023</p>
-          <p>Pennsylvania, US</p>
-          <a href="https://www.pitt.edu/">pitt.edu</a>
-
-          <p>Bachelor of Computer Science</p>
-          <p>Badminton Club: Vice President: 2020 - 2021 | President: 2021 - 2023</p>
+          <EducationSection />
           <div className="instagram-crop-wrapper">
             <div className="instagram-mask" style={{ '--mask-height': '270px' } as React.CSSProperties}>
               <InstagramEmbed url="https://www.instagram.com/p/C05VUrEOGfO/" width="100%" captioned={false} />
