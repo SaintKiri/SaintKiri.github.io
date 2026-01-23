@@ -33,7 +33,6 @@ function ProjectCard({ pro }: { pro: PicCard }) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                textAlign: 'center',
                 padding: 0,
                 transition: 'transform 0.2s ease-in-out',
                 '.MuiCardActionArea-root:hover &': {
@@ -43,7 +42,6 @@ function ProjectCard({ pro }: { pro: PicCard }) {
             >
               <h3 style={{
                 margin: 0,
-                textAlign: 'center',
               }}>
                 {pro.title}
               </h3>

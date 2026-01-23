@@ -2,6 +2,7 @@
 $font-family-base: 'Quicksand', sans-serif;
 
 html {
+  scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
 
@@ -12,6 +13,10 @@ html {
 // Navbar
 $navbar-brand-font-size: 2.5rem;
 $nav-link-font-size: 1.25rem;
+
+.navbar {
+  background-color: white;
+}
 
 // Fade in effect
 @keyframes fadeIn {
