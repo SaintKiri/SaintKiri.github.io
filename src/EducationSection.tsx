@@ -7,7 +7,11 @@ const EDUCATION: TextCard = {
   location: "Pittsburgh, PA",
   companyURL: ['Pitt', 'https://www.pitt.edu'],
   descriptionTitle: "Bachelor of Science, Computer Science",
-  description: "Badminton Club\n\tVice President: 2020 - 2021\n\tPresident: 2021 - 2023"
+  description: (<><b>Badminton Club</b><br />
+    &ensp;<b>Vice President: 2020 - 2021</b><br />
+    &ensp;Assisted the President in club operation (during COVID-19 lockdown)<br />
+    &ensp;<b>President: 2021 - 2023</b><br />
+    &ensp;Re-introduced management positions. Initiated the competitive team</>)
 }
 
 function EducationSection() {

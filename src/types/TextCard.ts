@@ -5,5 +5,5 @@ export type TextCard = {
   companyURL: [text: string, url: string];
 
   descriptionTitle: string;
-  description: string;
+  description: React.ReactNode; // Supports (styled) string
 }
