@@ -59,6 +59,13 @@ hr.heading-divider {
 }
 
 // Card
+.MuiCard-root {
+  code {
+    color: white;
+    font-weight: bold;
+  }
+}
+
 .experience-card {
   margin: 3em;
 

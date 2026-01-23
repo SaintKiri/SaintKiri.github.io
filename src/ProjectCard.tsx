@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardMedia, Box } from '@mui/material';
+import { Card, CardActionArea, CardMedia, Box, CardContent } from '@mui/material';
 
 // Icons
 import 'devicon/devicon.min.css'
@@ -7,23 +7,50 @@ import { PicCard } from './types/PicCard';
 
 function ProjectCard({ pro }: { pro: PicCard }) {
   return (
-    <Card sx={{ maxWidth: 345, position: 'relative', overflow: 'hidden' }}>
+    <Card sx={{ width: 400, position: 'relative', overflow: 'hidden' }}>
       <CardActionArea disableRipple href={pro.gitURL} target='_blank' rel='noopener noreferrer'>
-        {/* The Background Image */}
-        <CardMedia
-          component="img"
-          height="400"
-          width="400"
-          image={pro.backgroundPicURL}
-          alt="Technology background"
-          sx={{
-            transition: 'transform 0.2s ease-in-out',
-            '.MuiCardActionArea-root:hover &': {
-              transform: 'scale(1.1)',
-            },
-          }} />
+        {
+          // The Background Image 
+          pro.backgroundPicURL ?
+            (<CardMedia
+              component="img"
+              image={pro.backgroundPicURL}
+              alt="Project Background"
+              sx={{
+                height: 400,
+                width: '100%',
+                transition: 'transform 0.2s ease-in-out',
+                '.MuiCardActionArea-root:hover &': {
+                  transform: 'scale(1.1)',
+                },
+              }} />)
+            :
+            // If no image, fill background with project title
+            (<CardContent
+              sx={{
+                height: 400,
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign: 'center',
+                padding: 0,
+                transition: 'transform 0.2s ease-in-out',
+                '.MuiCardActionArea-root:hover &': {
+                  transform: 'scale(1.1)',
+                },
+              }}
+            >
+              <h3 style={{
+                margin: 0,
+                textAlign: 'center',
+              }}>
+                {pro.title}
+              </h3>
+            </CardContent>)
+        }
 
-        {/* The Overlay Content */}
+        {/* Overlay description */}
         <Box
           sx={{
             position: 'absolute',
@@ -48,7 +75,11 @@ function ProjectCard({ pro }: { pro: PicCard }) {
           }}>
           <h5>{pro.title}</h5>
           <p>{pro.description}</p>
-          <i className={pro.languageIcons[0]}></i>
+          <div style={{ display: 'flex', gap: '15px', fontSize: '2rem' }}>
+            {pro.languageIcons.map((icon, index) => (
+              <i key={index} className={pro.languageIcons[index]} />
+            ))}
+          </div>
         </Box>
       </CardActionArea>
     </Card>
