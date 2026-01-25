@@ -3,6 +3,7 @@ import { PicCard } from "./types/PicCard";
 
 import { Container, Row, Col } from 'react-bootstrap';
 
+// Find Icons here: https://devicon.dev/
 const LIBRETRACK: PicCard = {
   title: "LibreTrack",
   description: "Contributed to a FOSS, cross-platform package tracking app",
@@ -13,10 +14,16 @@ const LIBRETRACK: PicCard = {
 const DC_BOT: PicCard = {
   title: "Discord Bot",
   description: (<>Created a music bot using Discord's APIs, along with <code>discord.js</code> and other npm packages</>),
-  languageIcons: ["devicon-javascript-plain", "devicon-nodejs-plain-wordmark"],
+  languageIcons: ["devicon-javascript-plain", "devicon-nodejs-plain-wordmark", "devicon-mocha-plain"],
   gitURL: "https://github.com/SaintKiri/tts-dc-bot"
 }
-const PROJECTS: PicCard[] = [LIBRETRACK, DC_BOT];
+const INDEX_TTS: PicCard = {
+  title: "Index TTS",
+  description: (<>Forked from its original. This is used in conjunction wtih FastAPI for my Discord Bot's TTS backend</>),
+  languageIcons: ["devicon-python-plain", "devicon-fastapi-plain-wordmark"],
+  gitURL: "https://github.com/SaintKiri/index-tts"
+}
+const PROJECTS: PicCard[] = [LIBRETRACK, DC_BOT, INDEX_TTS];
 
 function ProjectsSection() {
   return (
