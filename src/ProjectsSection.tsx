@@ -9,21 +9,27 @@ const LIBRETRACK: PicCard = {
   description: "Contributed to a FOSS, cross-platform package tracking app",
   languageIcons: ["devicon-flutter-plain"],
   backgroundPicURL: "https://raw.githubusercontent.com/proninyaroslav/libretrack/refs/heads/master/art/linux_screenshots/s1.png",
-  gitURL: "https://github.com/proninyaroslav/libretrack"
+  url: "https://github.com/proninyaroslav/libretrack"
 }
 const DC_BOT: PicCard = {
   title: "Discord Bot",
   description: (<>Created a music bot using Discord's APIs, along with <code>discord.js</code> and other npm packages</>),
-  languageIcons: ["devicon-javascript-plain", "devicon-nodejs-plain-wordmark", "devicon-mocha-plain"],
-  gitURL: "https://github.com/SaintKiri/tts-dc-bot"
+  languageIcons: ["devicon-nodejs-plain-wordmark", "devicon-mocha-plain"],
+  url: "https://github.com/SaintKiri/tts-dc-bot"
 }
 const INDEX_TTS: PicCard = {
   title: "Index TTS",
-  description: (<>Forked from its original. This is used in conjunction wtih FastAPI for my Discord Bot's TTS backend</>),
+  description: "Forked from its original. This is used in conjunction wtih FastAPI for my Discord Bot's TTS backend",
   languageIcons: ["devicon-python-plain", "devicon-fastapi-plain-wordmark"],
-  gitURL: "https://github.com/SaintKiri/index-tts"
+  url: "https://github.com/SaintKiri/index-tts"
 }
-const PROJECTS: PicCard[] = [LIBRETRACK, DC_BOT, INDEX_TTS];
+const TARKOV_DEV_API: PicCard = {
+  title: "Tarkov Prices",
+  description: (<>Utilizing <a href="https://tarkov.dev/">tarkov.dev</a>'s GraphQL API, listing the prices of my favourite game items</>),
+  languageIcons: ["devicon-go-original-wordmark", "devicon-vuejs-plain-wordmark", "devicon-wasm-original", "devicon-githubactions-plain-wordmark"],
+  url: "https://saintkiri.github.io/goTarkovDevAPI/"
+}
+const PROJECTS: PicCard[] = [LIBRETRACK, DC_BOT, INDEX_TTS, TARKOV_DEV_API];
 
 function ProjectsSection() {
   return (
@@ -31,7 +37,7 @@ function ProjectsSection() {
       <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
         {PROJECTS.map((pro) => (
           <Col key={pro.title} className="d-flex">
-            <ProjectCard pro={pro}/>
+            <ProjectCard pro={pro} />
           </Col>
         ))}
       </Row>

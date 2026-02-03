@@ -8,7 +8,7 @@ import { PicCard } from './types/PicCard';
 function ProjectCard({ pro }: { pro: PicCard }) {
   return (
     <Card sx={{ width: 400, position: 'relative', overflow: 'hidden' }}>
-      <CardActionArea disableRipple href={pro.gitURL} target='_blank' rel='noopener noreferrer'>
+      <CardActionArea disableRipple href={pro.url} target='_blank' rel='noopener noreferrer'>
         {
           // The Background Image 
           pro.backgroundPicURL ?
@@ -70,10 +70,25 @@ function ProjectCard({ pro }: { pro: PicCard }) {
             '.MuiCardActionArea-root:hover &': {
               opacity: 1,
             },
+            // Text styling
+            '& a': {
+              color: '#87ceeb',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              transition: 'color 0.2s',
+            },
+            '& a:hover': {
+              color: '#a0e4ff', // Slightly lighter on hover
+              textDecoration: 'underline',
+            },
+            '& code': {
+              color: 'white',
+              fontWeight: 'bold',
+            }
           }}>
           <h5>{pro.title}</h5>
           <p>{pro.description}</p>
-          <div style={{ display: 'flex', gap: '15px', fontSize: '2rem' }}>
+          <div style={{ display: 'flex', gap: '15px', fontSize: '2.5rem' }}>
             {pro.languageIcons.map((icon, index) => (
               <i key={index} className={pro.languageIcons[index]} />
             ))}

@@ -5,5 +5,5 @@ export type PicCard = {
 
   backgroundPicURL?: string;
 
-  gitURL: string;
+  url: string;
 }
