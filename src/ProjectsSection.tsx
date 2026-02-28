@@ -27,6 +27,7 @@ const TARKOV_DEV_API: PicCard = {
   title: "Tarkov Prices",
   description: (<>Utilizing <a href="https://tarkov.dev/">tarkov.dev</a>'s GraphQL API, listing the prices of my favourite game items</>),
   languageIcons: ["devicon-go-original-wordmark", "devicon-vuejs-plain-wordmark", "devicon-wasm-original", "devicon-githubactions-plain-wordmark"],
+  backgroundPicURL: "https://raw.githubusercontent.com/SaintKiri/goTarkovDevAPI/refs/heads/main/art/screenshots/1.png",
   url: "https://saintkiri.github.io/goTarkovDevAPI/"
 }
 const PROJECTS: PicCard[] = [LIBRETRACK, DC_BOT, INDEX_TTS, TARKOV_DEV_API];
